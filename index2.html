@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -14,56 +14,73 @@
         <p>Не лінуйтесь, а відповідайте!</p>
 
     </header>
-    
+
     <form action="https://formspree.io/uliana.boiarchuk@gmail.com" method="POST">
-      <fieldset>
-    <legend>Викладуємо інформацію про себе:</legend>
-    <br>
-    <label>Ваше ім'я*:
+        <fieldset>
+            <legend>Викладуємо інформацію про себе:</legend>
+            <br>
+            <label>Ваше ім'я*:
       <input type="text" name="client-name"
       required>
     </label>
-    <br>
-    <label>Стать*:
-         <br><input type="radio" name="gender" value="чоловіча">чоловіча
-         <br><input type="radio" name="gender" value="жіноча">жіноча
-         <br><input type="radio" name="gender" value="інша">інша
-    </label>
-     <br>
-     <label> Елетронна скринька*:
+            <br>
+            <label>Стать:</label>
+            <br><input type="radio" name="gender" value="чоловіча">чоловіча
+            <br><input type="radio" name="gender" value="жіноча">жіноча
+            <br><input type="radio" name="gender" value="інша">інша
+            <br>
+            <label> Елетронна скринька*:
       <input type="email" name="client-email"
       required>
     </label>
-       <br>
-        <label> Мені пощастило жити в*:
-      <input type="text" name="client-answer"
+            <br>
+            <label> Мені пощастило жити в*:
+      <input type="text" name="city"
       placeholder="напишіть своє місто/село" 
       required>
-    </label> 
-    </fieldset>
-     <fieldset>
-    <legend>Ті запитання, відповіді на які цікавлять нас найбільше</legend>
-    <<br>
-        <label> Признавайтесь скільки годин на день витрачаєте на соціальні мережі*:
-      <input type="text" name="client-answer"
+    </label>
+        </fieldset>
+        <fieldset>
+            <legend>Ті запитання, відповіді на які цікавлять нас найбільше</legend>
+            <br>
+            <label> Признавайтесь скільки годин на день витрачаєте на соціальні мережі*:
+      <input type="text" name="hours"
       placeholder="чесно.." 
       required>
     </label>
-    <br>
-     <label> Незважаючи на той весь час витрачений на соцмережі, я можу похвалитись тим, що інтернет мені допомагає вчитись*:
-      <input type="text" name="client-answer"
+            <br>
+            <label> Незважаючи на той весь час витрачений на соцмережі, я можу похвалитись тим, що інтернет мені допомагає вчитись*:
+      <input type="text" name="studytime"
       required> годин на день.
     </label>
-    <br> 
-    <label> Розкажіть про свій типовий день (максимум 300 словечків)*
-    <input type"text" name="client-text"
-    required pattern=[A-Z]{300}
-    placeholder="як тільки відриваю я свої оченята...." 
-    required>
-    </label> 
-     </fieldset>
-     <input type="submit" value="фух, відправляю">
-     <input type="reset" value="хочу заповнити наново"
+            <br>
+            <label> Розкажіть про свій типовий день*
+    <input type="text" name="day"
+    required
+    placeholder="як тільки відриваю я свої оченята...." >
+    </label>
+        </fieldset>
+        <fieldset>
+            <legend>Залишилось ще трошки</legend>
+            <br><label>  Я користуюсь найчастіше:
+    </label>
+            <select>
+        <option value="phone">телефон</option>
+        <option value="compuret">комп'ютер</option>
+        <option value="tablet">планшет</option>
+      </select>
+<br>
+            <label> дата заповнення*:
+      <input type="text" id="date" name="date" 
+      placeholder="19 січня 2018"
+      required>
+    </label>
+        </fieldset>
+
+        <input type="submit" value="фух, відправляю">
+        <input type="reset" value="хочу заповнити наново">
+
     </form>
 </body>
+
 </html>

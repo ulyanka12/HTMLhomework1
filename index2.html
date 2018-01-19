@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>page2 HTML homework</title>
+</head>
+
+<body>
+    <header>
+        <h1> Соціологічне опитування на тему:" Скільки часу ми проводимо в інтернеті?" </h1>
+        <p>Не лінуйтесь, а відповідайте!</p>
+
+    </header>
+    
+    <form action="https://formspree.io/uliana.boiarchuk@gmail.com" method="POST">
+      <fieldset>
+    <legend>Викладуємо інформацію про себе:</legend>
+    <br>
+    <label>Ваше ім'я*:
+      <input type="text" name="client-name"
+      required>
+    </label>
+    <br>
+    <label>Стать*:
+         <br><input type="radio" name="gender" value="чоловіча">чоловіча
+         <br><input type="radio" name="gender" value="жіноча">жіноча
+         <br><input type="radio" name="gender" value="інша">інша
+    </label>
+     <br>
+     <label> Елетронна скринька*:
+      <input type="email" name="client-email"
+      required>
+    </label>
+       <br>
+        <label> Мені пощастило жити в*:
+      <input type="text" name="client-answer"
+      placeholder="напишіть своє місто/село" 
+      required>
+    </label> 
+    </fieldset>
+     <fieldset>
+    <legend>Ті запитання, відповіді на які цікавлять нас найбільше</legend>
+    <<br>
+        <label> Признавайтесь скільки годин на день витрачаєте на соціальні мережі*:
+      <input type="text" name="client-answer"
+      placeholder="чесно.." 
+      required>
+    </label>
+    <br>
+     <label> Незважаючи на той весь час витрачений на соцмережі, я можу похвалитись тим, що інтернет мені допомагає вчитись*:
+      <input type="text" name="client-answer"
+      required> годин на день.
+    </label>
+    <br> 
+    <label> Розкажіть про свій типовий день (максимум 300 словечків)*
+    <input type"text" name="client-text"
+    required pattern=[A-Z]{300}
+    placeholder="як тільки відриваю я свої оченята...." 
+    required>
+    </label> 
+     </fieldset>
+     <input type="submit" value="фух, відправляю">
+     <input type="reset" value="хочу заповнити наново"
+    </form>
+</body>
+</html>
